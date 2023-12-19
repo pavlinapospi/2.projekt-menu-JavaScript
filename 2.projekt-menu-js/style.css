@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*header*/
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:black;
+    height: 70px;
+    color:rgb(10, 92, 92);
+}
+
+.logo {
+    flex-grow: 1;
+    padding:5px 0 0 30px;
+}
+
+
+nav li {
+    display: inline-block;
+    list-style-type:none;
+    margin-right: 20px;
+}
+nav li :hover {
+    color: rgb(4, 192, 192);
+}
+nav li a {
+    text-decoration: none;
+    color:rgb(10, 92, 92);
+}
+.menu-icon {
+    display: none;
+    margin-right: 30px;
+    font-size: 25px;
+}
+@media (max-width: 750px) {
+    .menu-icon {
+        display:block;
+        margin-right: 30px;
+        font-size: 25px;
+    }
+    .menu-icon :hover{
+        color: rgb(4, 192, 192);
+    }
+    header {
+        position: relative;
+    }
+    header nav {
+        display: none;
+        position: absolute;
+        top: 70px;
+        background-color:black;
+        width: 100%;
+    }
+    header nav li {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+/*main*/
+.images-container {
+    min-height: calc(100vh - 70px);
+    background-image: url(images/neptune2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
